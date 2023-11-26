@@ -4,12 +4,6 @@ import numpy as np
 import json
 
 
-# Read theme config file
-with open('theme_config.json', 'r') as f:
-    theme_config = json.load(f)
-
-
-
 st.set_page_config(
     layout="wide", 
     page_title="Weather Prediction", 
@@ -18,7 +12,7 @@ st.set_page_config(
  )
 
 
-with open('wave.css') as f:
+with open('theme.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
