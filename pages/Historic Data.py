@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import csv
+from io import StringIO
 
 districts = [ "Barisal", "Bogra", "Chittagong", "Comilla", "Dhaka", "Khulna", "Mymensingh", "Narayanganj", "Rajshahi", "Sylhet"]
 
@@ -26,8 +28,16 @@ elif box == "Bogra":
 elif box == "Dhaka":
     url = 'https://raw.githubusercontent.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/main/datasets/Dhaka.csv'
 
-# Read CSV with error_bad_lines parameter
-data = pd.read_csv(url, error_bad_lines=False)
+response = pd.read_csv(url, header=None)
+
+
+csv_data = StringIO(response.to_csv(index=False, header=None))
+csv_reader = csv.reader(csv_data, delimiter=',')
+data = []
+for row in csv_reader:
+    if len(row) == response.shape[1]:
+        data.append(row)
+
 df = pd.DataFrame(data)
 st.dataframe(df.head(dtf))
 
