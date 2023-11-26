@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-districts = [ "Barisal", "Bogra" , "Chittagong", "Comilla", "Dhaka", "Khulna", "Mymensingh", "Narayanganj", "Rajshahi","Sylhet"]
+districts = [ "Barisal", "Bogra", "Chittagong", "Comilla", "Dhaka", "Khulna", "Mymensingh", "Narayanganj", "Rajshahi", "Sylhet"]
 
 st.title("Historic Data")
 st.subheader("")
