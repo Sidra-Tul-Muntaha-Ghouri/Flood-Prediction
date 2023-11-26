@@ -2,14 +2,13 @@ import streamlit as st
 import pandas as pd
 
 
-
-districts = ['Dhaka', 'Chittagong', "Barisal", "Comilla", "Rajshahi" ]
+districts = [ "Barisal", "Bogra", "Chittagong", "Comilla", "Dhaka", "Khulna", "Mymensingh", "Narayanganj", "Rajshahi", "Sylhet"]
 
 st.title("Forecast")
 st.subheader("")
 
 
-with open('wave.css') as f:
+with open('theme.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
