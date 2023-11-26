@@ -18,16 +18,16 @@ box = st.selectbox(label = 'Select District', options = districts)
 dn = st.slider(label = "" ,min_value = 5, max_value = 500, step = 5)
 
 if box == "Barisal":
-    url ='https://github.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/blob/main/datasets/Barisal.csv'
+    url = 'https://raw.githubusercontent.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/main/datasets/Barisal.csv'
 
 elif box == "Bogra":
-    url ='https://github.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/blob/main/datasets/Bogra.csv'
+    url = 'https://raw.githubusercontent.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/main/datasets/Bogra.csv'
 
 elif box == "Dhaka":
-    url = "https://github.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/blob/main/datasets/Dhaka.csv"
+    url = 'https://raw.githubusercontent.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/main/datasets/Dhaka.csv'
 
-data = pd.read_csv(url)
+# Read CSV with error_bad_lines parameter
+data = pd.read_csv(url, error_bad_lines=False)
 df = pd.DataFrame(data)
-st.dataframe(df.head(dn))
-
+st.dataframe(df.head(dtf))
 
