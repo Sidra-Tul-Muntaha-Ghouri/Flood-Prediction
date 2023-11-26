@@ -39,5 +39,5 @@ for row in csv_reader:
         data.append(row)
 
 df = pd.DataFrame(data)
-st.dataframe(df.head(dtf))
+st.dataframe(df.head(dn))
 
