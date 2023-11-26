@@ -7,7 +7,7 @@ st.title("Historic Data")
 st.subheader("")
 
 
-with open('wave.css') as f:
+with open('theme.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
