@@ -38,6 +38,6 @@ for row in csv_reader:
     if len(row) == response.shape[1]:
         data.append(row)
 
-df = pd.DataFrame(data, columns=response.columns)
+df = pd.DataFrame(data, header=response.columns)
 st.dataframe(df.head(dn))
 
