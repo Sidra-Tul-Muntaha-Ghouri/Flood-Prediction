@@ -28,8 +28,6 @@ elif box == "Bogra":
 elif box == "Dhaka":
     url = 'https://raw.githubusercontent.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/main/datasets/Dhaka.csv'
 
-data = pd.read_csv(url)
-
-df = pd.DataFrame(data)
+data = pd.read_csv(url, sep = ',')
 st.dataframe(df.head(dn))
 
