@@ -6,7 +6,7 @@ import json
 
 st.set_page_config(
     layout="wide", 
-    page_title="Weather Prediction", 
+    page_title="Flood Prediction", 
     page_icon="⛅",
     initial_sidebar_state="expanded",
  )
@@ -16,7 +16,7 @@ with open('theme.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
-st.title('Flood Prediction - Bangladesh')
+st.title('Flood Prediction - Bangladesh 🇧🇩')
 
 #st.image("app/artifactory/Home.png", caption='', use_column_width=True)
 
