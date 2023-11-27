@@ -28,15 +28,7 @@ elif box == "Bogra":
 elif box == "Dhaka":
     url = 'https://raw.githubusercontent.com/Sidra-Tul-Muntaha-Ghouri/Flood-Prediction/main/datasets/Dhaka.csv'
 
-response = pd.read_csv(url, header=None)
-
-
-csv_data = StringIO(response.to_csv(index=False, header=None))
-csv_reader = csv.reader(csv_data, delimiter=',')
-data = []
-for row in csv_reader:
-    if len(row) == response.shape[1]:
-        data.append(row)
+data = pd.read_csv(url)
 
 df = pd.DataFrame(data)
 st.dataframe(df.head(dn))
