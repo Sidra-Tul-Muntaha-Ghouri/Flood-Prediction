@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-import csv
-from io import StringIO
+
 
 districts = [ "Barisal", "Bogra", "Chittagong", "Comilla", "Dhaka", "Khulna", "Mymensingh", "Narayanganj", "Rajshahi", "Sylhet"]
 
