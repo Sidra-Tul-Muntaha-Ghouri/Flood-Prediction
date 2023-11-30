@@ -23,8 +23,6 @@ st.title('Flood Prediction - Bangladesh 🇧🇩')
 
 st.subheader('**FloodGuard: Integrating Rainfall Time Series and GIS Data for Flood Prediction and Waterbody Forecasting in Bangladesh**')
 
-st.subheader('**FloodGuard: Integrating Rainfall Time Series and GIS Data for Flood Prediction and Waterbody Forecasting in Bangladesh**')
-
 st.write(""" 
 **Problem Statement:**\\
 Bangladesh is highly susceptible to flooding due to its unique geography and monsoon climate. Flooding leads to significant socio-economic and environmental consequences, causing the loss of lives, displacing communities, damaging infrastructure, and disrupting livelihoods.\n
