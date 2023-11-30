@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import json
+from streamlit_extras.app_logo import add_logo
 
 
 st.set_page_config(
@@ -27,15 +28,5 @@ Bangladesh is highly susceptible to flooding due to its unique geography and mon
 
 
 with st.sidebar:
-      st.image("omdena-bangladesh-chapter.png", use_column_width=True)
-      st.markdown(
-    """
-    <style>
-    div[data-widget="stSidebar"] {
-        background-color: #336599;
-        color: #ffffff;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True)
+     add_logo("omdena-bangladesh-chapter.png", height=200)
       
