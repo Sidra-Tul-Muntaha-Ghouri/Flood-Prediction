@@ -28,7 +28,7 @@ st.write("""
 Bangladesh is highly susceptible to flooding due to its unique geography and monsoon climate. Flooding leads to significant socio-economic and environmental consequences, causing the loss of lives, displacing communities, damaging infrastructure, and disrupting livelihoods.\n
 
 **Objective:**\\
-The main objective of this project is to enhance forecasting system, minimize damages associated with flooding, and strengthen community resilience in Bangladesh.      
+The main objective of this project is to enhance the forecasting system, minimize damages associated with flooding, and strengthen community resilience in Bangladesh.      
 **Scope and Coverage:**\\
 _______
 **Data Sources:**\\
